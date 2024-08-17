@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Usando link externos</h1>
+        <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">repositório público no GitHub</a></p> <!-- target="_blank" rel="external" recomendavel usar em links externos porque abre outra guia no navegador --> <!--hreflang="en" para saber o idioma principal do site do link-->
+
+    <h1>Links Internos</h1>
+        <p>Essa é a primeira página do site. Se você quiser, pode acessar tambem <a href="pag002.html" target="_self" rel="next">minha segunda página</a></p>
+        <p><a href="noticias/pag003.html">Pagina de Noticias</a></p>
+    <!--rel next para proxima pagina, rel nofollow pro mecanismo de busca não continuar-->
+
+    <h1>Links para downloads</h1>
+    <ul>
+        <li><a href="Livro/10 - Ligações em toda parte (1).pdf" download="10 - Ligações em toda parte (1).pdf" >Baixar o livro em PDF</a></li>
+        <!--google chrome não baixa pdf nem com download + application-->
+        <li><a href="Livro/10 - Ligações em toda parte (1).zip" download="10 - Ligações em toda parte (1).zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos a prender a reproduzir audios no HTML 5</p>
+    <audio src="midia/Zula - Mini Vandals.mp3" controls></audio>
+    <br>
+    <!--Outra forma-->
+    <audio preload="metadata"   controls loop> <!--autoplay funciona aqui-->
+        <source src="midia/Zula - Mini Vandals.mp3" type="audio/mpeg">
+        <source src="midia/Zula - Mini Vandals.ogg" type="audio/ogg">
+        <source src="midia/Zula - Mini Vandals.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Zula - Mini Vandals.mp3">Clique Aqui</a> para baixar o arquivo</p>
+    </audio>
+
+    <h1>Reproduzindo Vídeos</h1>
+    <h2>Ospedagem interna</h2>
+    <video src="videos/videondas_HB.mp4" width="500" autoplay controls></video>
+    <br>
+    <!-- Outra forma -->
+    <video width="500" controls poster="imagens/foto-p.png" loop autoplay>
+        <!--Colocar varias opções em arquivos diferentes porque muitos arquivos não rodam em certos navegadores-->
+        <source src="videos/videondas_HB.mp4" type="video/mp4">
+        <source src="videos/videondas_HB.m4v" type="video/mp4">
+        <source src="videos/videondas_HB.webm" type="video/webm">
+        <source src="videos/videondas_HB.mp4" type="video/ogg">
+        <p>seu navegador não tem compatibilidade com reprodução de Vídeos</p>
+        <!--Vídeos hospedado internos vão consumir muito tráfego de dados, ou seja, muito caro a hospedagem-->
+    </video>
+
+    <h2>videos externa</h2>
+    <h3>videos do youtube</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/A70l-aId9Dw?si=H96si3cA0o9nVuuf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3>Videos do vimeo</h3>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/928424990?h=073386ff10&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+</body>
+</html>

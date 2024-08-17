@@ -1,0 +1,18 @@
+.divisao1 {
+    float: left;
+    flex-direction: column;
+    background-color: aquamarine;
+    width: 50%;
+    align-content: space-around;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.divisao2 {
+    width: 45%;
+    float: inline-end;
+    align-content: end;
+    justify-content: end;
+    align-items: end;
+    
+
+}
