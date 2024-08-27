@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+  text-align: center;
+  background-color: darkcyan;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+header {
+  font-size: 20px;
+}
+
+section {
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 30px;
+  width: 500px;
+  height: auto;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.431);
+  color: black;
+}
+
+#contet {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#content select {
+  margin-top: 30px;
+  width: 150px;
+}
+
+#content #btnFin {
+  margin-top: 10px;
+  width: 100px;
+}
+
+#resultado {
+  margin-top: 30px;
+  font-size: 1.3em;
+}
+
+footer {
+    font-style: italic;
+}
